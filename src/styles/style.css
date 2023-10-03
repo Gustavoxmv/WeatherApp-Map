@@ -1,0 +1,206 @@
+/* Estilos generales */
+body {
+    
+    font-family: 'Montserrat', sans-serif; /* Utiliza Montserrat como fuente */
+    text-align: center;
+     /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen de fondo */
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/tom-barrett-364228.jpg');
+     height: 100vh;
+     background-size: cover;
+     background-repeat: no-repeat; /* Evita que la imagen se repita */
+     color: white; /* Ajusta el color del texto según sea necesario para que sea legible en la imagen de fondo */
+ 
+   
+     /* Puedes agregar más estilos según tus necesidades */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+   margin-top: 60px;
+}
+
+.contenedor-principal {
+    
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 79vh; /* Ajusta la altura según sea necesario */
+    display: flex; /* Utiliza un contenedor flexible para alinear elementos en línea */
+   width: 100%;
+  }
+  
+  .contenedor-principal h1{
+    font-size: 90px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+
+.contenedor-principal p {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.contenedor-principal img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición de transformación */
+  
+}
+
+  .mi-div {
+    position: absolute; /* Posiciona de forma absoluta dentro del contenedor principal */  
+    bottom: 0; /* Mueve el div hacia la parte inferior */
+    left: 100px; /* Mueve el div hacia la parte izquierda */
+     padding: 20px;
+    
+  }
+
+  .input-conteiner{
+
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+    padding: 10px; /* Añade espacio alrededor del contenedor */
+
+  }
+
+  .recuadro-transparente {
+position: absolute;
+  top: 0;
+  right: 0; /* Pega el recuadro a la derecha */
+  width: 500px; /* Ancho deseado del recuadro */
+  height: 100%; /* Ocupa toda la altura disponible */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Agrega un borde con transparencia */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+  padding: 10px; /* Añade espacio alrededor del contenido */
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  
+  }
+
+  .mi-input {
+   
+    border: none !important; /* Agrega !important para asegurarte de que se aplique */
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #b5b5b5 !important; /* Agrega solo una línea debajo del input */
+    color: #fff;
+    flex: 1;
+    padding: 18px;
+    margin-left: 30px;
+    margin-right: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+   
+ 
+  }
+
+  .recuadro-transparente p {
+
+    text-align: left;
+    margin-left: 35px;
+
+
+}
+
+h2{
+
+    font-size: 16px;
+    margin: 25px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 60px;
+
+}
+
+button {
+    position: absolute;
+    background-image: url('img/icons8-magnifying-glass-30.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    top: 0;
+    right: 0; /* Establece 'right' para que esté en la esquina superior derecha */
+    background-color: #CF6E0E;
+    border: none;
+    color: #000; /* Color del texto del botón */
+    cursor: pointer;
+    padding: 35px; /* Añade espacio alrededor del botón según sea necesario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al borde del botón */
+}
+    
+
+
+
+
+
+
+
+/* Estilos para resaltar el icono */
+img:hover {
+    transform: scale(1.2); /* Escala el icono al 120% en hover */
+    
+}
+
+/* Estilos para .weather-info */
+.weather-info {
+    border: 2px solid #007BFF; /* Agrega un borde de 2 píxeles de ancho y color azul */
+    padding: 20px; /* Agrega espacio interno para que se vea más moderno */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltar el div */
+    text-align: center; /* Centra el contenido del div */
+    background-color: #FFFFFF; /* Fondo blanco */
+    
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .recuadro-transparente {
+        position: absolute;
+          top: 0;
+          right: 0; /* Pega el recuadro a la derecha */
+          width: 200px; /* Ancho deseado del recuadro */
+          height: 100%; /* Ocupa toda la altura disponible */
+          border: 1px solid rgba(0, 0, 0, 0.2); /* Agrega un borde con transparencia */
+          background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+          padding: 10px; /* Añade espacio alrededor del contenido */
+          display: flex;
+          flex-direction: column;
+          backdrop-filter: blur(5px);
+          
+          }
+        
+    
+}
